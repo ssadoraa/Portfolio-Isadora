@@ -1,0 +1,115 @@
+.experiences {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experiences .subtitle-sections {
+    color: #e0e0e0;
+}
+
+.text-experience {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #525252;
+}
+
+.text-experience strong {
+    color: #141414;
+}
+
+.job {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.job::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#B6F829, #67DD0A);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.job-year {
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #525252;
+    font-size: 0.875rem;
+    width: 80px;
+    text-align: right;
+}
+
+.job-title {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.job-text {
+    font-size: 0.875rem;
+    color: #525252;
+    line-height: 1.4;
+}
+
+.job-skils {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.job-skils li {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+    .experiences {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiences .subtitle-sections {
+        color: #141414;
+    }
+
+    .text-experience {
+        font-size: 1.25rem;
+    }
+
+    .job-year {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    .job {
+        grid-template-columns: 1fr;
+    }
+
+    .text-experience {
+        font-size: 1.10rem;
+    }
+}
